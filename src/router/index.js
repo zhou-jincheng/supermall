@@ -6,6 +6,8 @@ let Home = () => import('views/home/Home.vue')
 let Category = () => import('views/category/Category.vue')
 let Cart = () => import('views/cart/Cart.vue')
 let Profile = () => import('views/profile/Profile.vue')
+let Detail = () => import('views/detail/Detail.vue')
+
 
 //安装路由
 Vue.use(VueRouter)
@@ -36,6 +38,11 @@ const routes = [
     path: '/profile',
     component: Profile
   },
+  {
+    name: 'detail',
+    path: '/detail/:id',
+    component: Detail
+  }
 ]
 
 //路由器
